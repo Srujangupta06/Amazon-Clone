@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Product from "../components/Product";
 
-interface Rating {
+type Rating  = {
   rate: number;
   count: number;
 }

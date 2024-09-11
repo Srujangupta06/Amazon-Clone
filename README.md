@@ -8,7 +8,7 @@ Frontend:
     -TypeScript
     -React
     -Redux Tool Kit
-    -React Native (Mobile Application)
+    -Optional React Native (Mobile Application)
     -Next.js
 
     Testing
