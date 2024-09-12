@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Product from "../components/Product";
-
+import Loading from "../components/Loading"
 type Rating = {
   rate: number;
   count: number;
@@ -31,17 +31,7 @@ export default function Products() {
     setProducts(jsonData);
   };
   if (products.length === 0) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <span className="text-2xl font-bold">
-          <span className="ball">🔴</span>
-          <span className="ball delay-1">🟣</span>
-          <span className="ball delay-2">🟠</span>
-          <span className="ball delay-3">🟢</span>
-          <span className="ball delay-4">🔵</span>
-        </span>
-      </div>
-    );
+    return <Loading />;
   }
   return (
     <div className="flex flex-col items-center">
