@@ -16,10 +16,13 @@ interface ProductProps {
   eachProduct: Product;
 }
 const Product = ({ eachProduct }: ProductProps) => {
-  const { title, price, rating, description, category, image } = eachProduct;
+  const { title, price, rating, category, image } = eachProduct;
   const { rate } = rating;
+  // const bgColors = ["#7aafe8","#b960e2","#75daba","#d9e04d","#fdc18d","#000000"];
+  // const randomBgColor = bgColors[Math.floor(Math.random() * bgColors.length - 1)];
+  // style={{ borderLeftColor: randomBgColor }}
   return (
-    <li className="w-[600px] border-l-[5px]  border-l border-[#1ca2bd] rounded-lg shadow-lg p-2 mr-8  mb-6 flex items-center">
+    <li className="w-[600px]  border-l-[4px] border-[#7aafe8] rounded-lg shadow-lg p-2 mr-8  mb-6 flex items-center" >
         <div className="pl-1 mt-2 mr-5">
           <img src={image} alt={title} className="w-[200px] h-[200px]"/>
         </div>
